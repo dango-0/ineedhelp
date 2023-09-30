@@ -8,6 +8,11 @@ iframe:hover{
     transition:transform 0.2s ease-out;
     transform-origin:center;
 }
+#upperfooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 #footerdown{
     
     margin-top: 1px;
@@ -28,8 +33,8 @@ iframe:hover{
 
  footer{
     background-color: rgb(241, 239, 239);
-     height: 10cm;
-     max-width: 100%;
+    height: 10cm;
+    width: 100vw;
  }
 
  #find{
