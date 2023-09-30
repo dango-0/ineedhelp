@@ -1,0 +1,249 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%; /* Add this to make it full-width */
+}
+/* Style the dropdown button */
+.dropbtn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Show the dropdown content when hovering over the parent element */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .logo {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ff4500;
+}
+
+/* Sticky header on scroll */
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensure body is a flex container */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    background: linear-gradient(200deg, #68696a, #000);
+    position: relative; /* Add this for footer positioning */
+}
+
+/* Container for the boxes */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual boxes */
+.container .box {
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container within each box */
+.container .box .img-box {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Styling for the images */
+.container .box .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Hover effect on boxes */
+.container .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient overlay on images on hover */
+.container .box .img-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #222, transparent);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Show gradient overlay on hover */
+.container .box:hover .img-box::before {
+    opacity: 1;
+}
+
+/* Text container within each box */
+.container .box .text-box {
+    padding: 12px 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    color:black;
+    z-index: 2;
+}
+
+/* Heading styles */
+.container .box .text-box h2 {
+    font-family: monospace;
+    font-size: 1px;
+    margin-bottom: 5px;
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+
+/* Show heading on hover with a delay */
+.container .box:hover .text-box h2 {
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+/* Paragraph styles */
+.container .box .text-box p {
+    font-size: 14px;
+    color: #777;
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+
+/* Show paragraph on hover with a delay */
+.container .box:hover .text-box p {
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+/* #term2>a:hover{
+    text-decoration: underline;
+  
+} */
+/* iframe:hover{
+    transform: scale(1.01);
+    transition:transform 0.2s ease-out;
+    transform-origin:center;
+}
+
+#term2>a:hover{
+    text-decoration: underline;
+  
+}
+iframe:hover{
+    transform: scale(1.01);
+    transition:transform 0.2s ease-out;
+    transform-origin:center;
+}
+#footerdown{
+    
+    margin-top: 1px;
+ }
+ 
+ #locate>a,#term2>a{
+     padding-right: 10px;
+     padding-left: 10px;
+     padding-bottom: 10px;
+     text-decoration: none;
+     color: black;
+     font-size: 15px;
+     font-weight: bold;
+     font-family: 'Times New Roman', Times, serif;
+     margin-right: 12px;
+     color:white;
+ } */
